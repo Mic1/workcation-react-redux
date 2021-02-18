@@ -5,7 +5,9 @@ import DropDown from "./DropDown";
 const Trigger = () => {
 	// console.log("Trigger.props: ", props);
 
+	// eslint-disable-next-line no-unused-vars
 	const [hasFocus, setHasFocus] = useState();
+	// eslint-disable-next-line no-unused-vars
 	const [isOpen, setIsOpen] = useState(true);
 
 	return (

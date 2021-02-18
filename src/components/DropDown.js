@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 const DropDown = ({ trigger, dropdown }) => {
+	// eslint-disable-next-line no-unused-vars
 	const [buttonHasFocus, setButtonHasFocus] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 
