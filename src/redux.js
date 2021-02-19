@@ -1,3 +1,6 @@
+/* All redux functionality encapsulated in one file. Split out into separate
+reducers, actions, state etc if becomes too complex  */
+
 import { createStore } from 'redux';
 
 export const ACTIONS = {
