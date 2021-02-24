@@ -1,4 +1,4 @@
-# Towards a suite of reusable React components for web design.
+# Towards a suite of reusable React components for the modern website.
 
 ## Project uses a port of the Tailwind Vue tutorials to React and Redux as its base application.
 

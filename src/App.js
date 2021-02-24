@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 
-import { ACTIONS } from './redux';
+// import { ACTIONS } from './redux';
+import { ACTIONS } from "./actions";
 
-import SearchFiltersVue from "./components/SearchFilters";
+import SearchFilters from "./components/SearchFilters";
 import SiteHeader from "./components/SiteHeader";
 import PropertyCard from "./components/PropertyCard";
 import Message from "./components/widgets/Message";
 
-import { loadLocationData } from './utils';
+import { fetchLocationData } from './utils';
 
 function useLoadLocationData() {
   const [stateAPIStatus, setAPIStatus] = useState('idle');
@@ -16,10 +17,10 @@ function useLoadLocationData() {
 
   useEffect(() => {
     setAPIStatus('loading');
-    loadLocationData()
+    fetchLocationData()
       .then((data) => {
         dispatch({
-          type: ACTIONS.LOAD_LOCATION,
+          type: ACTIONS.LOAD_LOCATIONS,
           payload: {
             locationData: data,
           },
@@ -34,21 +35,27 @@ function useLoadLocationData() {
   return stateAPIStatus;
 }
 
+function selectorLocations(state) {
+  const { locations } = state; 
+  return locations;
+}
 
 const App = () => {
-	const locations = useSelector((state) => state.locations)
+	// const locations = useSelector((state) => state.locations)
+	const locations = useSelector(selectorLocations, shallowEqual);
+
 	const stateAPIStatus = useLoadLocationData();
 
 	return (			
 		<div className=" min-h-screen bg-gray-200 antialiased  xl:flex xl:flex-col xl:h-screen">
 			<SiteHeader className="xl:flex-shrink-0" />
 			<div className="xl:flex-1 xl:flex xl:overflow-y-hidden">
-				<SearchFiltersVue />
+				<SearchFilters />
 
 					<Message status={stateAPIStatus} />
 					{stateAPIStatus === 'success' && (
 					<main className="py-6 xl:flex-1 xl:overflow-x-hidden">
-						{locations.map((location, i) => {
+						{locations.locations.locationData.map((location, i) => {
 							return (
 								<div key={i} className="{'mt-6': i > 0}">
 									<div className="px-4 xl:px-8">

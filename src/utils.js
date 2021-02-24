@@ -1,4 +1,4 @@
-export async function loadLocationData() {
+export async function fetchLocationData() {
   const res = await window.fetch('/locations.json');
   if (!res.ok) {
     throw new Error('API failed');

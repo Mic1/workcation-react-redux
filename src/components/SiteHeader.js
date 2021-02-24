@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import DropDown from "./DropDown";
+import { useSelector } from 'react-redux';
 
-const Trigger = () => {
-	// console.log("Trigger.props: ", props);
+import DropDown from "./DropDown";
+import GoogleAuth from "./GoogleAuth";
+
+/* const Trigger = (props) => {
+	console.log("Trigger.props: ", props);
 
 	// eslint-disable-next-line no-unused-vars
 	const [hasFocus, setHasFocus] = useState();
@@ -11,7 +14,6 @@ const Trigger = () => {
 	const [isOpen, setIsOpen] = useState(true);
 
 	return (
-		/* <div id="trigger"> */
 			<span
 				className={`block h-8 w-8 overflow-hidden rounded-full border-2 ${
 					hasFocus || isOpen
@@ -25,11 +27,10 @@ const Trigger = () => {
 					alt=""
 				/>
 			</span>
-		/* </div> */
 	);
-};
+}; */
 
-const Dropdown = () => {
+/* const Dropdown = () => {
 	return (
 		<div id="dropdown" className="mt-3 bg-white xl:border rounded-lg w-48 py-2 shadow-xl">
 			<a href="#account" className="block hover:text-white text-gray-800 px-4 py-2 hover:bg-indigo-500">
@@ -38,15 +39,16 @@ const Dropdown = () => {
 			<a href="#support" className="block hover:text-white text-gray-800 mt-0 px-4 py-2 hover:bg-indigo-500">
 				Support
 			</a>
-			<a href="#sign-out" className="block hover:text-white text-gray-800 mt-0 px-4 py-2 hover:bg-indigo-500">
-				Sign out
+			<a href="#sign-in " className="block hover:text-white text-gray-800 mt-0 px-4 py-2 hover:bg-indigo-500">
+				Sign in
 			</a>
 		</div>
 	);
-};
+}; */
 
-const SiteHeaderVue = () => {
+const SiteHeader = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const isLoggedIn = useSelector(state => state.auth.isSignedIn);
 
 	const toggle = () => {
 		setIsOpen(!isOpen);
@@ -127,22 +129,37 @@ const SiteHeaderVue = () => {
 						<a href="#" className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200" >Messages</a>
 					</div>				
 				<div className="relative px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
-					<div className="flex items-center sm:hidden">
-						<img
-							className="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
-							src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
-							alt=""
-						/>
-						<span className="ml-4 font-semibold text-gray-200 sm:hidden">
-							Isla Schoger
-						</span>
+					<div id="hdr-img" className="flex items-center sm:hidden">
+						{isLoggedIn ?
+							<React.Fragment>
+								<img
+									className="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
+									src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
+									alt=""
+								/>
+								<span className="ml-4 font-semibold text-gray-200 sm:hidden">
+									Isla Schoger
+								</span>
+							</React.Fragment>
+						:
+							<React.Fragment>
+								<svg className="h-9 w-9 inline-flex items-center fill-current  text-white"viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+								</svg>
+								<span className="ml-4 font-semibold text-gray-200 sm:hidden">
+									Not Logged In
+								</span>
+							</React.Fragment>
+						
+						}
 					</div>
 					<div className="mt-5 sm:hidden">
 						<a href="#account" className="block text-gray-400 hover:text-white">Account settings</a>
 						<a href="#support" className="mt-3 block text-gray-400 hover:text-white" >Support</a>
 						<a href="#sign-out" className="mt-3 block text-gray-400 hover:text-white" >Sign out</a>
+						<GoogleAuth />
 					</div>
-					<DropDown id="ddv"  className="hidden sm:block" trigger={Trigger()} dropdown={Dropdown()} />
+					<DropDown id="ddv"  className="hidden sm:block" />
 				</div>
 			</div>
 		</nav>
@@ -150,4 +167,4 @@ const SiteHeaderVue = () => {
 	);
 };
 
-export default SiteHeaderVue;
+export default SiteHeader;

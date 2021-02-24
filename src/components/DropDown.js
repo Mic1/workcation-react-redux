@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from "react";
 
-const DropDown = ({ trigger, dropdown }) => {
+import Trigger from "./widgets/Trigger";
+// import Drop from "./widgets/Drop";
+import GoogleDrop from "./widgets/GoogleDrop";
+
+const DropDown = () => {
 	// eslint-disable-next-line no-unused-vars
 	const [buttonHasFocus, setButtonHasFocus] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
@@ -33,12 +37,12 @@ const DropDown = ({ trigger, dropdown }) => {
 	return (
 		<div className="relative hidden sm:block">
 			<button onClick={toggle} type="button" className="block focus:outline-none" onFocus={()=>{setButtonHasFocus(true)}} onBlur={()=>{setButtonHasFocus(false)}}>
-				<trigger>{trigger}</trigger>
+				<Trigger hasFocus={buttonHasFocus} isOpen={isOpen}/>
 			</button>
 			<div className={isOpen ? 'block' : 'hidden'}>
       	<button onClick={()=>{setIsOpen(false)}} type="button" className="z-30 block fixed inset-0 w-full h-full cursor-default"></button>
 					<div className="absolute z-40 right-0">
-						<dropdown>{dropdown}</dropdown>
+						<GoogleDrop/>
 					</div>
 			</div>
 		</div>

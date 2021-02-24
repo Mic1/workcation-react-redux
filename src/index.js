@@ -1,15 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from "redux";
+import reduxThunk from "redux-thunk";
+
+import reducers from "./reducers";
 
 import "./assets/css/tailwind.css";
 import App from "./App";
-import { createReduxStore } from './redux';
-// import AppTest5 from "./components/testing/Test5/AppTest5";
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+	reducers,
+	composeEnhancers(applyMiddleware(reduxThunk))
+);
 
 ReactDOM.render(
 	<React.StrictMode>
-    <Provider store={createReduxStore()}>
+    <Provider store={store}>
       <App />
     </Provider>
 	</React.StrictMode>,
