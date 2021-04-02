@@ -11,6 +11,7 @@ function useLoadLocationData() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+		console.log("LocationsPage.useEffect");
     setAPIStatus('loading');
     fetchLocationData()
       .then((data) => {

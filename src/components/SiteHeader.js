@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { useSelector } from 'react-redux';
 
 import DropDown from "./DropDown";
@@ -9,10 +9,18 @@ const SiteHeader = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const isLoggedIn = useSelector(state => state.auth.isSignedIn);
 	// inline function is re-created on every re-rendering. No benefit to useCallback!
-	// const toggle = useCallback(() => {setIsOpen(!isOpen);},[]);
-	const toggle = () => {
+	//const toggle = useCallback(() => {console.log("toggle..."); setIsOpen(!isOpen);},[isOpen]);
+ 	const toggle = () => {
 		setIsOpen(!isOpen);
+	}; 
+
+	const testFunc = () => {
+		setIsOpen(!isOpen);
+		console.log("A test message");
 	};
+
+	const refFunc = testFunc;
+	console.log("equality: ", refFunc === testFunc, testFunc);
 
 	return (
 		<header id="hdr" className="bg-gray-900 sm:flex sm:items-center sm:justify-between xl:bg-white">

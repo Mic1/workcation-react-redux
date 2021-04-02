@@ -22,7 +22,7 @@ const StarRatings = (props) => {
 
 	return (
 		<div className={`mt-2 flex items-center ${collapse ? "hidden" : null}`}>
-			{starsMap()}
+			{starsMap(numStars)}
 			<span className="ml-2">{category}</span>
 
 			<span className="ml-2 text-gray-600 text-sm">{reviewNum} reviews</span>
