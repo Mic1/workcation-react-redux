@@ -5,7 +5,7 @@
 ## A work in progress.
 
 The Tailwind Vue tutorials are an excellent example of the layout of a modern responsive website
-and was chosen as the base for this project.
+and was chosen as the base for this project. Especially to cover all use cases this example was also chosen because of its take on responsive design. If component behaviours and looks are too different between media breaks, the convoluted conditionals within the css quickly become convoluted, and a better design can be to duplicate the component with the correct css for different breaks. In this example the site header with drop and filter components, and different sidebar solutions for different screen widths will test our reusable component strategy.
 
 With the advent of products like Shopify (https://www.shopify.com/) and projects such as https://bit.dev/, suites of smaller reusable components that can be used plug-and-play like lego bricks to construct the look and feel of today's modern web sites are getting closer. Shopify charges $79 a month and requires learning its own templating
 language ("Liquid") that is based on Ruby, but that does include the hosting environment. Bit.dev components are certainly not plug-and-play. Other solutions such as WordPress have been labelled "convoluted"
