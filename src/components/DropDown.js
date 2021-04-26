@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 import Trigger from "./widgets/Trigger";
-// import Drop from "./widgets/Drop";
 import GoogleDrop from "./widgets/GoogleDrop";
 
 const DropDown = () => {
@@ -12,7 +11,7 @@ const DropDown = () => {
 	useEffect(() => {
 		document.addEventListener("keydown", onEscape);
 		return () => document.removeEventListener("keydown", onEscape);
-	// eslint-disable-next-line react-hooks/exhaustive-deps
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const onEscape = (e) => {
@@ -26,24 +25,32 @@ const DropDown = () => {
 		setIsOpen(!isOpen);
 	};
 
-	/* const focus = () => {
-		setButtonHasFocus(true);
-	}; */
-
-	/* const blur = () => {
-		setButtonHasFocus(false);
-	}; */
-
 	return (
 		<div className="relative hidden sm:block">
-			<button onClick={toggle} type="button" className="block focus:outline-none" onFocus={()=>{setButtonHasFocus(true)}} onBlur={()=>{setButtonHasFocus(false)}}>
-				<Trigger hasFocus={buttonHasFocus} isOpen={isOpen}/>
+			<button
+				onClick={toggle}
+				type="button"
+				className="block focus:outline-none"
+				onFocus={() => {
+					setButtonHasFocus(true);
+				}}
+				onBlur={() => {
+					setButtonHasFocus(false);
+				}}
+			>
+				<Trigger hasFocus={buttonHasFocus} isOpen={isOpen} />
 			</button>
-			<div className={isOpen ? 'block' : 'hidden'}>
-      	<button onClick={()=>{setIsOpen(false)}} type="button" className="z-30 block fixed inset-0 w-full h-full cursor-default"></button>
-					<div className="absolute z-40 right-0">
-						<GoogleDrop/>
-					</div>
+			<div className={isOpen ? "block" : "hidden"}>
+				<button
+					onClick={() => {
+						setIsOpen(false);
+					}}
+					type="button"
+					className="z-30 block fixed inset-0 w-full h-full cursor-default"
+				></button>
+				<div className="absolute z-40 right-0">
+					<GoogleDrop />
+				</div>
 			</div>
 		</div>
 	);

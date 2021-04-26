@@ -1,29 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useCallback } from "react";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
 import DropDown from "./DropDown";
 import GoogleAuth from "./GoogleAuth";
 
 const SiteHeader = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const isLoggedIn = useSelector(state => state.auth.isSignedIn);
+	const isLoggedIn = useSelector((state) => state.auth.isSignedIn);
 	// inline function is re-created on every re-rendering. No benefit to useCallback!
 	//const toggle = useCallback(() => {console.log("toggle..."); setIsOpen(!isOpen);},[isOpen]);
- 	const toggle = () => {
+	const toggle = () => {
 		setIsOpen(!isOpen);
-	}; 
+	};
 
 	const testFunc = () => {
 		setIsOpen(!isOpen);
 		console.log("A test message");
 	};
 
-	const refFunc = testFunc;
-	console.log("equality: ", refFunc === testFunc, testFunc);
-
 	return (
-		<header id="hdr" className="bg-gray-900 sm:flex sm:items-center sm:justify-between xl:bg-white">
+		<header
+			id="hdr"
+			className="bg-gray-900 sm:flex sm:items-center sm:justify-between xl:bg-white"
+		>
 			<div className="flex justify-between px-4 py-3 xl:w-72 xl:bg-gray-900 xl:justify-center xl:py-5">
 				<div>
 					<svg
@@ -50,33 +50,37 @@ const SiteHeader = () => {
 				</div>
 				<div className="flex sm:hidden">
 					<button
-					onClick={toggle}
-					type="button"
-					className="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
-				>
-					<svg
-						className="h-6 w-6 fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
+						onClick={toggle}
+						type="button"
+						className="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
 					>
-						{isOpen ? (
-							<path
-								fillRule="evenodd"
-								clipRule="evenodd"
-								d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-							/>
-						) : (
-							<path
-								fillRule="evenodd"
-								clipRule="evenodd"
-								d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-							/>
-						)}
-					</svg>
+						<svg
+							className="h-6 w-6 fill-current"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+						>
+							{isOpen ? (
+								<path
+									fillRule="evenodd"
+									clipRule="evenodd"
+									d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+								/>
+							) : (
+								<path
+									fillRule="evenodd"
+									clipRule="evenodd"
+									d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+								/>
+							)}
+						</svg>
 					</button>
+				</div>
 			</div>
-			</div>
-			<nav className={`sm:flex sm:items-center sm:px-4 xl:flex-1 xl:justify-between ${isOpen ? "block" : "hidden"  } `}>
+			<nav
+				className={`sm:flex sm:items-center sm:px-4 xl:flex-1 xl:justify-between ${
+					isOpen ? "block" : "hidden"
+				} `}
+			>
 				<div className="hidden xl:block xl:relative xl:max-w-xs xl:w-full">
 					<div className="absolute inset-y-0 left-0 flex items-center pl-3">
 						<svg
@@ -88,50 +92,92 @@ const SiteHeader = () => {
 							<path d="M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41l.01-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
 						</svg>
 					</div>
-					<input className="block w-full border border-transparent bg-gray-200 focus:outline-none focus:bg-white focus:border-gray-300 text-gray-900 rounded-lg pl-10 pr-4 py-2" placeholder="Search by keywords"/>
+					<input
+						className="block w-full border border-transparent bg-gray-200 focus:outline-none focus:bg-white focus:border-gray-300 text-gray-900 rounded-lg pl-10 pr-4 py-2"
+						placeholder="Search by keywords"
+					/>
 				</div>
 				<div className="sm:flex sm:items-center">
 					<div className="px-2 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0 sm:px-0">
-						<a href="#" className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">List your property</a>
-						<a href="#" className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200" >Trips</a>
-						<a href="#" className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200" >Messages</a>
-					</div>				
-				<div className="relative px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
-					<div id="hdr-img" className="flex items-center sm:hidden">
-						{isLoggedIn ?
-							<React.Fragment>
-								<img
-									className="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
-									src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
-									alt=""
-								/>
-								<span className="ml-4 font-semibold text-gray-200 sm:hidden">
-									Isla Schoger
-								</span>
-							</React.Fragment> 
-						:
-							<React.Fragment>
-								<svg className="h-9 w-9 inline-flex items-center fill-current  text-white" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
-								</svg>
-								<span className="ml-4 font-semibold text-gray-200 sm:hidden">
-									Not Logged In
-								</span>
-							</React.Fragment>
-						
-						}
+						<a
+							href="#"
+							className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200"
+						>
+							List your property
+						</a>
+						<a
+							href="#"
+							className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200"
+						>
+							Trips
+						</a>
+						<a
+							href="#"
+							className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200"
+						>
+							Messages
+						</a>
 					</div>
-					<div className="mt-5 sm:hidden">
-						<a href="#account" className="block text-gray-400 hover:text-white">Account settings</a>
-						<a href="#support" className="mt-3 block text-gray-400 hover:text-white" >Support</a>
-						<a href="#sign-out" className="mt-3 block text-gray-400 hover:text-white" >Sign out</a>
-						<GoogleAuth />
+					<div className="relative px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
+						<div id="hdr-img" className="flex items-center sm:hidden">
+							{isLoggedIn ? (
+								<React.Fragment>
+									<img
+										className="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
+										src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
+										alt=""
+									/>
+									<span className="ml-4 font-semibold text-gray-200 sm:hidden">
+										Isla Schoger
+									</span>
+								</React.Fragment>
+							) : (
+								<React.Fragment>
+									<svg
+										className="h-9 w-9 inline-flex items-center fill-current  text-white"
+										viewBox="0 0 18 18"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+										/>
+									</svg>
+									<span className="ml-4 font-semibold text-gray-200 sm:hidden">
+										Not Logged In
+									</span>
+								</React.Fragment>
+							)}
+						</div>
+						<div className="mt-5 sm:hidden">
+							<a
+								href="#account"
+								className="block text-gray-400 hover:text-white"
+							>
+								Account settings
+							</a>
+							<a
+								href="#support"
+								className="mt-3 block text-gray-400 hover:text-white"
+							>
+								Support
+							</a>
+							{/* <a
+								href="#sign-out"
+								className="mt-3 block text-gray-400 hover:text-white"
+							>
+								Sign out
+							</a> */}
+							<GoogleAuth />
+						</div>
+						<DropDown id="ddv" className="hidden sm:block" />
 					</div>
-					<DropDown id="ddv"  className="hidden sm:block" />
 				</div>
-			</div>
-		</nav>
-	</header>
+			</nav>
+		</header>
 	);
 };
 

@@ -7,15 +7,26 @@
 The Tailwind Vue tutorials are an excellent example of the layout of a modern responsive website
 and was chosen as the base for this project.
 
-With the advent of projects such as https://bit.dev/, suites of smaller reusable components that can be used plug-and play like lego bricks to construct the look and feel of today's modern web sites are
-"coming into their own". Coupled with Vue "slots", Svelte "slots" and React "RenderProps", it is now possible to decouple a tight parent-child component relationship and still maintain relationships that communicate data
-and props for rendering.
+With the advent of products like Shopify (https://www.shopify.com/) and projects such as https://bit.dev/, suites of smaller reusable components that can be used plug-and-play like lego bricks to construct the look and feel of today's modern web sites are getting closer. Shopify charges $79 a month and requires learning its own templating
+language ("Liquid") that is based on Ruby, but that does include the hosting environment. Bit.dev components are certainly not plug-and-play. Other solutions such as WordPress have been labelled "convoluted"
+
+This project aims to investigate how close we can get to plug-and-play components with standard open source tools
+including obviously html, css and javascript, and frameworks such as react and svelte (strictly not a framework
+but a compiler), and state management tools such as redux.
+
+State management tools will be very important to the solution. Many components not only require internal state data, but need to communicate data to the "outside world". Bit.dev has some great components, but they need integrating in many cases because of their "standalone" construction.
+
+Redux will save the day here, or to be more specific Redux Toolkit. Redux Toolkit reduces the complexity of using Redux and the amount of boilerplate code that has to be coded.
+
+An example of a reusable component is a "Google Logon" component. It might slot into a reusable site header component.
 
 A reusable component can also have its own data. A reusable login component that slots into a reusable
 site header where various login components could be interchanged, must be able to set an 'isLoggedIn' flag that all other reusable components can go to find out whether a user is logged in so that they can update
 their internal state to enable buttons, menu items etc.
 
-This project will explore how a reusable Redux "framework" could be used to bind reusable gui components together,
+Using Redux Toolkit, the Google Logon component could come with its own slice and selectors, all of which are plugged in (copy/paste), and any other component that needs to know logon status, just needs to know the name of the selector to call.
+
+This project will explore how a Redux "framework" could be used to bind reusable gui components together,
 where the React/Vue/Svelte components might come with Redux state and Redux actions that can be plugged into the Redux framework.
 
 This version uses React, Redux and Tailwind. There will be a parallel project using

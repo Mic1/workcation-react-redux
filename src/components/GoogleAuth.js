@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { signIn, signOut } from "../actions";
+import { signIn, signOut } from "../features/auth/authSlice";
 
 class GoogleAuth extends React.Component {
 	componentDidMount() {
@@ -9,7 +9,7 @@ class GoogleAuth extends React.Component {
 			window.gapi.client
 				.init({
 					clientId:
-					"621250980106-g8vsh9vi8rsv5vtr1tmh6fr4f8r0jnej.apps.googleusercontent.com",
+						"621250980106-g8vsh9vi8rsv5vtr1tmh6fr4f8r0jnej.apps.googleusercontent.com",
 					scope: "email",
 				})
 				.then(() => {
@@ -21,10 +21,11 @@ class GoogleAuth extends React.Component {
 	}
 
 	onAuthChange = (isSignedIn) => {
+		console.log("onAuthChange: ", isSignedIn, this.auth);
 		if (isSignedIn) {
-			this.props.signIn(this.auth.currentUser.get().getId());
+			this.props.dispatch(signIn(this.auth.currentUser.get().getId()));
 		} else {
-			this.props.signOut();
+			this.props.dispatch(signOut());
 		}
 	};
 
@@ -41,16 +42,30 @@ class GoogleAuth extends React.Component {
 			return null;
 		} else if (this.props.isSignedIn) {
 			return (
-				<button onClick={this.onSignOutClick} className="w-full hover:text-white  sm:hover:bg-indigo-500 pt-2 pb-1 pl-0 pr-4 sm:px-4 inline-flex items-center">
-					<span className="text-gray-400 sm:text-gray-700 hover:text-white">Google Sign Out</span>
-					<span className="ml-2 px-2 inline-flex items-center rounded bg-red-400 text-white font-bold text-lg">G</span>  
+				<button
+					onClick={this.onSignOutClick}
+					className="w-full hover:text-white  sm:hover:bg-indigo-500 pt-2 pb-1 pl-0 pr-4 sm:px-4 inline-flex items-center"
+				>
+					<span className="text-gray-400 sm:text-gray-700 hover:text-white">
+						Google Sign Out
+					</span>
+					<span className="ml-2 px-2 inline-flex items-center rounded bg-red-400 text-white font-bold text-lg">
+						G
+					</span>
 				</button>
 			);
 		} else {
-			return (				
-				<button onClick={this.onSignInClick} className="w-full  hover:text-white sm:hover:bg-indigo-500 pt-2 pb-1 pl-0 pr-4 sm:px-4 inline-flex items-center">
-					<span className="text-gray-400 sm:text-gray-700 hover:text-white">Google Sign In</span>
-					<span className="ml-2 px-2 inline-flex items-center rounded bg-red-400 text-white font-bold text-lg">G</span>  
+			return (
+				<button
+					onClick={this.onSignInClick}
+					className="w-full  hover:text-white sm:hover:bg-indigo-500 pt-2 pb-1 pl-0 pr-4 sm:px-4 inline-flex items-center"
+				>
+					<span className="text-gray-400 sm:text-gray-700 hover:text-white">
+						Google Sign In
+					</span>
+					<span className="ml-2 px-2 inline-flex items-center rounded bg-red-400 text-white font-bold text-lg">
+						G
+					</span>
 				</button>
 			);
 		}
@@ -65,4 +80,4 @@ const mapStateToProps = (state) => {
 	return { isSignedIn: state.auth.isSignedIn };
 };
 
-export default connect(mapStateToProps, { signIn, signOut })(GoogleAuth);
+export default connect(mapStateToProps)(GoogleAuth);

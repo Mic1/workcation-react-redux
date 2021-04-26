@@ -5,6 +5,7 @@
       "Live like the stars in these luxurious Southern California estates.",
     "properties": [
       {
+        "property_id": 1,
         "imageUrl":
           "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
@@ -15,6 +16,7 @@
         "rating": 4
       },
       {
+        "property_id": 2,
         "imageUrl":
           "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 4,
@@ -25,6 +27,7 @@
         "rating": 3
       },
       {
+        "property_id": 3,
         "imageUrl":
           "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "beds": 5,
@@ -35,6 +38,7 @@
         "rating": 5
       },
       {
+        "property_id": 4,
         "imageUrl":
           "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
@@ -52,6 +56,7 @@
       "Escape the cold and enjoy great weather without breaking the bank.",
     "properties": [
       {
+        "property_id": 5,
         "imageUrl":
           "https://images.unsplash.com/photo-1447958272669-9c562446304f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
@@ -62,6 +67,7 @@
         "rating": 4
       },
       {
+        "property_id": 6,
         "imageUrl":
           "https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "beds": 4,
@@ -72,6 +78,7 @@
         "rating": 3
       },
       {
+        "property_id": 7,
         "imageUrl":
           "https://images.unsplash.com/photo-1472224371017-08207f84aaae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 5,
@@ -82,6 +89,7 @@
         "rating": 5
       },
       {
+        "property_id": 8,
         "imageUrl":
           "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
@@ -99,6 +107,7 @@
       "Experience Texas living in these awesome ranch-style homes.",
     "properties": [
       {
+        "property_id": 9,
         "imageUrl":
           "https://images.unsplash.com/photo-1471231681582-352356ab45a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
@@ -109,6 +118,7 @@
         "rating": 4
       },
       {
+        "property_id": 10,
         "imageUrl":
           "https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "beds": 4,
@@ -119,6 +129,7 @@
         "rating": 3
       },
       {
+        "property_id": 11,
         "imageUrl":
           "https://images.unsplash.com/photo-1432303492674-642e9d0944b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 5,
@@ -129,6 +140,7 @@
         "rating": 5
       },
       {
+        "property_id": 12,
         "imageUrl":
           "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "beds": 3,
