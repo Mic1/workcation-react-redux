@@ -39,3 +39,22 @@ Sveltekit/Svelte, Svelte Stores (hopefully, if not fall back to Redux) and Tailw
 
 1. Install dependencies `yarn install` or `npm install`
 2. Run the dev server `yarn start` or `npm run start`
+
+
+## It was a good idea starting with a reasonably complex web interface ....
+
+- breaking up components from "top down" soon allowed statements to be made:
+
+1. css coding for responsive design in reusable components is extremely important and maybe not trivial.
+  It is sometimes easy to dismiss css as 'make that button red', but of course in creating reusable components
+  complete responsive behaviour must be baked in.
+
+2. Reusable components might be limited to containers which do not have their own data, and which present child
+  components which manage the data display. Taking the example of the LocationsPage which contains 'title' and 'description' fields, we created a dataObj within locationsSlice that maps the dataset to the fields. This works.
+  However, doing this for a reusable standard form that contains many field objects would mean a lot of mapping. Making the GoogleAuth component reusable is more straightforward as it is not affected by outside data and just needs to publish a loggedIn flag etc.
+
+3. A bottom up approach will now be taken where reusable container components are created including siteheader, navbar,
+   footer, general containers and also standalones like the GoogleAuth comp - shopping cart widget etc that do not depend immediately on external data.
+
+4. With this done we will have a better idea about whether components heavily dependent on parent data can be made fully 
+  reusable.

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useCallback } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import DropDown from "./DropDown";
 import GoogleAuth from "./GoogleAuth";
@@ -99,18 +100,27 @@ const SiteHeader = () => {
 				</div>
 				<div className="sm:flex sm:items-center">
 					<div className="px-2 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0 sm:px-0">
-						<a
-							href="#"
-							className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200"
-						>
-							List your property
-						</a>
-						<a
-							href="#"
-							className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200"
-						>
-							Trips
-						</a>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/">Workcation</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Users">Users Page</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Three">ThreeJS</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Three2">ThreeJS2</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Three3">ThreeJS3</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Three4">ThreeJS4</Link>
+						</div>
+						<div className="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2 xl:text-gray-900 xl:hover:bg-gray-200">
+							<Link to="/Three5">ThreeJS5</Link>
+						</div>
 						<a
 							href="#"
 							className="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900 xl:hover:bg-gray-200"

@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Denver",
+    "description":
+      "Liven up your party with a guest robot appearance.",
+    "robots": [
+      {
+        "property_id": 1,
+        "imageUrl":
+          "https://robohash.org/13?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Modern home in city center",
+        "price": 190000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 48, "starColor": "text-teal-500"  },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 40, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 2,
+        "imageUrl":
+          "https://robohash.org/12?set=set2&size=180x180",
+        "beds": 4,
+        "baths": 1,
+        "title": "Quiet living outside the city",
+        "price": 175000,
+        "reviewCount": 12,
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 90, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 80, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 3,
+        "imageUrl":
+          "https://robohash.org/11?set=set2&size=180x180",
+        "beds": 5,
+        "baths": 4,
+        "title": "Renovated apartment uptown",
+        "price": 200000,
+        "reviewCount": 54,
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 30, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 4,
+        "imageUrl":
+          "https://robohash.org/10?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Family home in the suburbs",
+        "price": 115000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 200, "starColor": "text-red-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 190, "starColor": "text-red-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 187, "starColor": "text-red-500"}
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Miami",
+    "description":
+      "Surprise your guests with a robot appearance.",
+    "robots": [
+      {
+        "property_id": 5,
+        "imageUrl":
+          "https://robohash.org/1?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Modern home in city center",
+        "price": 190000,
+        "reviewCount": 34,
+        "starNum": 5, "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 75, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 75, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 70, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 70, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 6,
+        "imageUrl":
+          "https://robohash.org/2?set=set2&size=180x180",
+        "beds": 4,
+        "baths": 1,
+        "title": "Quiet living outside the city",
+        "price": 175000,
+        "reviewCount": 12,
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 30, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 7,
+        "imageUrl":
+          "https://robohash.org/3?set=set2&size=180x180",
+        "beds": 5,
+        "baths": 4,
+        "title": "Renovated apartment uptown",
+        "price": 200000,
+        "reviewCount": 54,
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 8,
+        "imageUrl":
+          "https://robohash.org/4?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Family home in the suburbs",
+        "price": 115000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 58, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 54, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 44, "starColor": "text-teal-500"}
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dallas",
+    "description":
+      "Invite a robot to your sporting event half-time show.",
+    "robots": [
+      {
+        "property_id": 9,
+        "imageUrl":
+          "https://robohash.org/8?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Modern home in city center",
+        "price": 190000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 87, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 61, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 81, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 80, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 10,
+        "imageUrl":
+          "https://robohash.org/7?set=set2&size=180x180",
+        "beds": 4,
+        "baths": 1,
+        "title": "Quiet living outside the city",
+        "price": 175000,
+        "reviewCount": 12,
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 21, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 19, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 28, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 22, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 11,
+        "imageUrl":
+          "https://robohash.org/6?set=set2&size=180x180",
+        "beds": 5,
+        "baths": 4,
+        "title": "Renovated apartment uptown",
+        "price": 200000,
+        "reviewCount": 54,
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 73, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 54, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500"}
+        ]
+      },
+      {
+        "property_id": 12,
+        "imageUrl":
+          "https://robohash.org/5?set=set2&size=180x180",
+        "beds": 3,
+        "baths": 2,
+        "title": "Family home in the suburbs",
+        "price": 115000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 67, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 45, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 67, "starColor": "text-teal-500"},
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
+      }
+    ]
+  }
+]

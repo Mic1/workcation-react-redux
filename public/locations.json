@@ -13,7 +13,13 @@
         "title": "Modern home in city center",
         "price": 190000,
         "reviewCount": 34,
-        "rating": 4
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 48, "starColor": "text-teal-500"  },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 40, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 2,
@@ -24,7 +30,13 @@
         "title": "Quiet living outside the city",
         "price": 175000,
         "reviewCount": 12,
-        "rating": 3
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 90, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 80, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 3,
@@ -35,7 +47,13 @@
         "title": "Renovated apartment uptown",
         "price": 200000,
         "reviewCount": 54,
-        "rating": 5
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 30, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 4,
@@ -46,7 +64,13 @@
         "title": "Family home in the suburbs",
         "price": 115000,
         "reviewCount": 34,
-        "rating": 4
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 200, "starColor": "text-red-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 190, "starColor": "text-red-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 187, "starColor": "text-red-500"}
+        ]
       }
     ]
   },
@@ -64,7 +88,13 @@
         "title": "Modern home in city center",
         "price": 190000,
         "reviewCount": 34,
-        "rating": 4
+        "starNum": 5, "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 75, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 75, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 70, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 70, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 6,
@@ -75,7 +105,13 @@
         "title": "Quiet living outside the city",
         "price": 175000,
         "reviewCount": 12,
-        "rating": 3
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 30, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 7,
@@ -86,7 +122,13 @@
         "title": "Renovated apartment uptown",
         "price": 200000,
         "reviewCount": 54,
-        "rating": 5
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 110, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 8,
@@ -97,7 +139,13 @@
         "title": "Family home in the suburbs",
         "price": 115000,
         "reviewCount": 34,
-        "rating": 4
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 58, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 54, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 44, "starColor": "text-teal-500"}
+        ]
       }
     ]
   },
@@ -115,7 +163,13 @@
         "title": "Modern home in city center",
         "price": 190000,
         "reviewCount": 34,
-        "rating": 4
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 87, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 61, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 81, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 80, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 10,
@@ -126,7 +180,13 @@
         "title": "Quiet living outside the city",
         "price": 175000,
         "reviewCount": 12,
-        "rating": 3
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 21, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 19, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 4, "reviews" : 28, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 22, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 11,
@@ -137,7 +197,13 @@
         "title": "Renovated apartment uptown",
         "price": 200000,
         "reviewCount": 54,
-        "rating": 5
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 73, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 4, "reviews" : 54, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500" },
+          { "category": "Amenities", "starNum": 5, "rating": 5, "reviews" : 60, "starColor": "text-teal-500"}
+        ]
       },
       {
         "property_id": 12,
@@ -148,7 +214,13 @@
         "title": "Family home in the suburbs",
         "price": 115000,
         "reviewCount": 34,
-        "rating": 4
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 67, "starColor": "text-teal-500" },
+          { "category": "Value", "starNum": 5, "rating": 5, "reviews" : 45, "starColor": "text-teal-500" },
+          { "category": "Location", "starNum": 5, "rating": 5, "reviews" : 67, "starColor": "text-teal-500"},
+          { "category": "Amenities", "starNum": 5, "rating": 4, "reviews" : 34, "starColor": "text-teal-500"}
+        ]
       }
     ]
   }

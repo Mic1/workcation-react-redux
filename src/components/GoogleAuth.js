@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import { signIn, signOut } from "../features/auth/authSlice";
 
+// rewriting this as function component creates errors! Find out why.
 class GoogleAuth extends React.Component {
 	componentDidMount() {
 		window.gapi.load("client:auth2", () => {

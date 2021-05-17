@@ -18,9 +18,17 @@ export const locationsSlice = createSlice({
 	initialState: {
 		loading: null,
 		data: null,
+		dataObj: {
+			title: "title",
+			description: "description",
+			details: "properties",
+		},
+		configObj: {
+			bgOpacity: "bg-opacity-75",
+		},
 	},
 	reducers: {},
-		extraReducers: {
+	extraReducers: {
 		[fetchLocationsData.pending]: (state, action) => {
 			state.loading = HTTP_STATUS.PENDING;
 		},

@@ -1,5 +1,6 @@
 const colors = require("tailwindcss/colors");
 module.exports = {
+	mode: "aot",
 	purge: {
 		mode: "layers",
 		content: [
@@ -35,7 +36,7 @@ module.exports = {
 					// boxShadow: theme("boxShadow.default"),
 					backgroundColor: theme("colors.gray.600"),
 					borderColor: "transparent",
-					iconColor: theme('colors.white', colors.white),
+					iconColor: theme("colors.white", colors.white),
 					lineHeight: theme("lineHeight.snug"),
 					"&:focus": { backgroundColor: theme("colors.gray.200") },
 				},
@@ -50,8 +51,8 @@ module.exports = {
 					height: theme("spacing.6"),
 					width: theme("spacing.6"),
 					backgroundColor: theme("colors.gray.900"),
-					checkboxSize: '1.5em',
-					borderRadius: theme('borderRadius.lg'),
+					checkboxSize: "1.5em",
+					borderRadius: theme("borderRadius.lg"),
 					"&:checked": { backgroundColor: theme("colors.indigo.500") },
 					"&:focus": { backgroundColor: theme("colors.gray.600") },
 					// checked: theme("colors.red.500"),
