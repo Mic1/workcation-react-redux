@@ -1,8 +1,7 @@
 # DEMO AT https://vibrant-stonebraker-0f221c.netlify.app/
 
 
-* NOTE: Latest versions of Firefox might not show UnSplash images by default. This can be fixed by typing about:config in browser URL bar, scrolling down to parameter
-* "image.avif.enabled" and toggling it to "disabled"
+* NOTE: Latest versions of Firefox might not show UnSplash images by default. This can be fixed by typing about:config in browser URL bar, scrolling down to parameter "image.avif.enabled" and toggling it to "disabled"
 
 
 # Towards a suite of reusable React components for the modern website.
