@@ -10,6 +10,8 @@
 
 ## A work in progress.
 
+The Tailwind Vue tutorials started off a trend (Sonny Sangha etc) of fast-paced clone demos of major websites - Google, GoogleDocs, Twitter, AirBnB etc - probably because Tailwind lends itself perfectly to "WYSWYG" styling - painting the picture before our eyes. 
+
 The Tailwind Vue tutorials are an excellent example of the layout of a modern responsive website
 and was chosen as the base for this project. Especially to cover all use cases this example was also chosen because of its take on responsive design. If component behaviours and looks are too different between media breaks, the convoluted conditionals within the css quickly become convoluted, and a better design can be to duplicate the component with the correct css for different breaks. In this example the site header with drop and filter components, and different sidebar solutions for different screen widths will test our reusable component strategy.
 
