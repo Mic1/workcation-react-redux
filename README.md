@@ -22,5 +22,6 @@ Planned:
   4) react-router
   5) Redux and Sagas
 
-Planned
+Planned. Since Vercel has now acquired Svelte, and the latest Sveltekit has directory based routing etc,
+the complete Next13 Workcation project will be converted to Sveltekit.
   1) The app with Sveltekit and directory based routing
