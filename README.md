@@ -16,7 +16,7 @@ The plan is to take a modern-looking gui and show how routing and state can be i
 SSR, streaming etc will be added to the various examples once they are reasonably functional
 
 Planned: 
-  1) Next13 - directory based routing
+  1) Next13 - directory based routing, SSR, streaming etc
   2) Redux and RTK Query
   3) Redux and react-query
   4) react-router
