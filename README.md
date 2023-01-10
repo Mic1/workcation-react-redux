@@ -3,6 +3,8 @@
 
 * NOTE: Latest versions of Firefox might not show UnSplash images by default. This can be fixed by typing "about:config" in browser URL bar, scrolling down to parameter "image.avif.enabled" and toggling it to "disabled"
 
+# The mission statement would be "What sets of tools are needed to do what Next13 does for React without using Next13?"
+
 
 # The base application for a set of Routing and State examples.
 
@@ -11,6 +13,7 @@
 ## A work in progress. Basic CRUD is being added.
 
 The plan is to take a modern-looking gui and show how routing and state can be implemented with various tools.
+SSR, streaming etc will be added to the various examples once they are reasonably functional
 
 Planned: 
   1) Next13 - directory based routing
