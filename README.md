@@ -9,7 +9,7 @@
 
 # The base application for a set of Routing and State examples.
 
-## Project uses a port of the Tailwind Vue tutorials to React and Redux as its base application. Redux will be removed where appropriate.
+## Project uses a port of Adam Wathan's  ("Mr Tailwind") Tailwind Vue tutorial to React and Redux as its base application. Redux will be removed where appropriate.
 
 ## A work in progress. Basic CRUD is being added.
 
