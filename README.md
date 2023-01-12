@@ -26,4 +26,3 @@ Planned:
 Planned. Since Vercel has now acquired Svelte, and the latest Sveltekit has directory based routing etc,
 the complete Next13 Workcation project will be converted to Sveltekit.
   1) The app with Sveltekit and directory based routing
-![image](https://user-images.githubusercontent.com/1424640/211996658-1c566406-1959-44c2-9dfe-6f6f0df1aa9a.png)
